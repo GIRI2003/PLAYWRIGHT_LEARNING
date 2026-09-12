@@ -75,3 +75,58 @@ printing((num1, num2) => num1 + num2, 100, 200);
 printing(function (num1, num2) {
     return num1 - num2;
 }, 100, 200);
+
+
+/* ----Passing multiple functions as a paramter in callback function ----- */
+
+function laptop(callback1, callback2, num) {
+    console.log('Starting....');
+    callback1(num);
+    callback2(num);
+}
+
+let coding = (num) => {
+    console.log('Coding with..', num);
+}
+
+let writing = (num) => {
+    console.log('writing with...', num);
+}
+
+laptop(coding, writing, 100);
+
+/* ------------------------------------ */
+function getUserDetails(callback, userObj) {
+    console.log('Fetching details...');
+    callback(userObj);
+}
+
+getUserDetails((user) => {
+    console.log('user details are,', user);
+}, { name: 'Girinath', age: 23 });
+
+
+/* ------------------------------------ */
+
+function get() {
+    console.log('Get API');
+};
+
+function put() {
+    console.log('Put API');
+};
+
+function post() {
+    console.log('Post API');
+};
+
+function deleteApi() {
+    console.log('delete API');
+};
+
+
+function performAPIAction(callback) {
+    callback();
+};
+
+performAPIAction(get);
