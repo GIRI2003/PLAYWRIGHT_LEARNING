@@ -20,4 +20,3 @@ console.log(jsonUser);//{"name":"Giri","age":23,"salary":8.5,"isActive":true,"ci
 console.log(typeof jsonUser);//string
 
 // JSON string to JavaScript Objects
-
