@@ -45,12 +45,14 @@ let loginPage = {
     loginButton: '#button',
     logoutButton: '#logout',
 
+    //Normal Function -> no let keyword
     doLogin() {
         console.log('Enter username using', this.userName);
         console.log('Enter password using', this.passWord);
         console.log('Click on login button');
     },
 
+    // Arrow function -> no let keyword, colon : should be used, = is not allowed inside objects
     doLogout: () => {
         console.log('Logout using', loginPage.logoutButton);
     }

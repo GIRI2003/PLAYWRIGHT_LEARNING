@@ -21,6 +21,8 @@ let user = {
     }
 }
 
+/* using spread operator -> {...objVariable}, not recommeded for nested obejcts */
+
 let myUser = { ...user }
 
 console.log(user);

@@ -23,11 +23,11 @@ console.log("String" === "string");
 
 /* --------------------------------------------------- */
 
-let a = 10.1;
-let b = 10.2;
-let c = 20.3;
+let a = 0.1;
+let b = 0.2;
+let c = 0.3;
 
-console.log(a + b); //20.299999999999997
+console.log(a + b); //0.30000000000000004
 console.log((a + b) == c); //false
 
 /*  */

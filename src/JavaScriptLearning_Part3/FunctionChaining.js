@@ -24,7 +24,7 @@ function logout() {
     // login(); // Maximum call stack size exceeded
 }
 
-/* Calling the login function */
+/* when we call the login function, it automatically exectues every function using chaining */
 login();
 
 // ----------------------------------------------------------------
