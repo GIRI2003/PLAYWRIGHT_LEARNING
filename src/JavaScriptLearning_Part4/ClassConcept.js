@@ -11,7 +11,7 @@ methods: I can walk, code, drive...
 */
 
 
-export class Employee {
+class Employee {
 
     //1. Class variables or global variable: let, var, const are not allowed
 
@@ -76,3 +76,6 @@ console.log(emp2.name, emp2.age, emp2.salary, emp2.dept, emp2.isActice);
 emp2.running();
 emp2.walking();
 await emp2.reading();
+
+
+export { Employee };
